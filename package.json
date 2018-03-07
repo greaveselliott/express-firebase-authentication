@@ -1,0 +1,23 @@
+{
+  "name": "express-firebase-authentication",
+  "version": "1.0.0",
+  "description": "Micro project, following a tutorial using Firebase's cloud functions to authenticate an Express application,",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greaveselliott/express-firebase-authentication.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greaveselliott/express-firebase-authentication/issues"
+  },
+  "homepage": "https://github.com/greaveselliott/express-firebase-authentication#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "firebase": "^4.10.1"
+  }
+}
