@@ -10,19 +10,10 @@ const firebase_config = {
 };
 var firebase_app = Firebase.initializeApp(firebase_config);
 
-export const addUser = (email, password, callback) => {
-    
-    firebase_app.auth()
-        .createUserWithEmailAndPassword(email, password)
-        .catch((error) => {
-            callback(error);
-        });
+export const addUser = (email, password) => {   
+    return firebase_app.auth().createUserWithEmailAndPassword(email, password);
 };
 
-export const authenticate = (email, password, callback) => {
-    firebase_app.auth()
-        .createUserWithEmailAndPassword(email, password)
-        .catch((error, user_data) => {
-            callback(error, user_data.user_id);
-        });
+export const authenticate = (email, password) => {
+    return firebase_app.auth().signInWithEmailAndPassword(email, password);
 };
